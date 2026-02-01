@@ -2686,3 +2686,23 @@ input, select, textarea {
 			}
 
 	}
+	/* Mi estilo personalizado oscuro */
+#page-wrapper {
+    background: #0d1117 !important; /* El color oscuro de tu referencia */
+    color: #ffffff !important;
+}
+
+#header-wrapper, #banner-wrapper {
+    background: transparent !important;
+}
+
+.box.container {
+    background: #161b22 !important; /* Tarjeta un poco más clara que el fondo */
+    border-radius: 25px; /* Bordes redondeados como la imagen */
+    border: 1px solid #30363d;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+h2, h3, strong {
+    color: #f39c12 !important; /* El color naranja de acento */
+}
