@@ -2753,3 +2753,21 @@ input[type="button"],
     box-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
     transition: width 1.5s ease-in-out; /* Esto hace que se llenen suavemente */
 }
+
+/* Estilo para las tarjetas de proyectos */
+.box.highlight {
+    background: #161b22 !important;
+    border: 2px solid #a855f7 !important;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box.highlight:hover {
+    transform: translateY(-10px); /* Se eleva al pasar el mouse */
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.6); /* Brillo lila */
+}
+
+/* Ajuste para que el texto dentro de las tarjetas sea blanco */
+.box.highlight p, .box.highlight h3 {
+    color: #ffffff !important;
+}
