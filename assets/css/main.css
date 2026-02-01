@@ -2729,3 +2729,27 @@ input[type="button"],
     border-radius: 50%;
     object-fit: cover;
 }
+
+.skills-container {
+    padding: 10px 0;
+}
+
+.skill-item {
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    background: #1c2128;
+    border-radius: 10px;
+    height: 10px;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #30363d;
+}
+
+.progress.lila {
+    background: linear-gradient(90deg, #a855f7, #d8b4fe);
+    height: 100%;
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+    transition: width 1.5s ease-in-out; /* Esto hace que se llenen suavemente */
+}
