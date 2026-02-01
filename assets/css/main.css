@@ -2686,23 +2686,46 @@ input, select, textarea {
 			}
 
 	}
-	/* Mi estilo personalizado oscuro */
+
+
 #page-wrapper {
-    background: #0d1117 !important; /* El color oscuro de tu referencia */
+    background: #0d1117 !important;
     color: #ffffff !important;
 }
 
-#header-wrapper, #banner-wrapper {
-    background: transparent !important;
+/* Cambiamos el borde del avatar y los títulos */
+h2, h3, strong, .highlight {
+    color: #a855f7 !important; /* Lila vibrante */
 }
 
-.box.container {
-    background: #161b22 !important; /* Tarjeta un poco más clara que el fondo */
-    border-radius: 25px; /* Bordes redondeados como la imagen */
-    border: 1px solid #30363d;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+.image.featured img {
+    border: 3px solid #a855f7; /* Borde lila para el avatar */
 }
 
-h2, h3, strong {
-    color: #f39c12 !important; /* El color naranja de acento */
+/* Si tienes botones, también los cambiamos */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.button {
+    background-color: #a855f7 !important;
+    border-color: #a855f7 !important;
+    color: #ffffff !important;
+}
+
+/* Forzar el banner a ser oscuro y corregir el nombre */
+#banner-wrapper {
+    background: #0d1117 !important;
+}
+
+#banner {
+    background: #161b22 !important; /* Tarjeta interna oscura */
+    border: 1px solid #a855f7; /* Borde lila */
+}
+
+/* Para que el avatar no tenga el fondo de cuadrícula blanco */
+.image.featured img {
+    background-color: transparent !important;
+    border: 3px solid #a855f7;
+    border-radius: 50%;
+    object-fit: cover;
 }
