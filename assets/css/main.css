@@ -2831,3 +2831,44 @@ input[type="button"],
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
+/* Efecto de cursor parpadeante */
+.cursor {
+    font-weight: bold;
+    color: #a855f7;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Usamos el ID del banner y el del texto para darle máxima prioridad */
+#banner .content header #typing-text {
+    font-size: 2.5rem !important; /* Usamos rem para mejor escala */
+    line-height: 1.2 !important;
+    display: inline-block !important;
+    font-weight: 800 !important;
+    color: #d8b4fe !important;
+    margin-top: 15px !important;
+}
+
+/* Ajuste para que el cursor también crezca con el texto */
+.cursor {
+    font-size: 2.5rem !important;
+    vertical-align: middle;
+}
+
+.foto-perfil {
+    border-radius: 50%; /* La hace circular */
+    border: 3px solid #a855f7; /* Borde lila sólido */
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.6); /* El brillo lila */
+    transition: transform 0.3s ease;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.05); /* Se agranda un poquito al pasar el mouse */
+    box-shadow: 0 0 30px rgba(168, 85, 247, 0.9); /* Brilla más al pasar el mouse */
+}

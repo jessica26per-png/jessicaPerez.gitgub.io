@@ -54,5 +54,6 @@ const animarBarras = () => {
     });
 };
 
+document.addEventListener("DOMContentLoaded", type);
 window.addEventListener('scroll', animarBarras);
 window.addEventListener('load', animarBarras);
