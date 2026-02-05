@@ -2796,8 +2796,38 @@ input[type="button"],
     font-size: 0.9em;
 }
 
-/* Para que las barras tengan un poco más de grosor y se vean potentes */
 .progress-bar {
-    height: 14px !important;
-    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+    width: 100%;
+    background-color: #30363d !important; /* Fondo gris oscuro */
+    border-radius: 10px;
+    height: 12px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.barra-llenado {
+    width: 0 !important; /* Forzamos que inicie en 0 */
+    height: 100%;
+    background-color: #a855f7 !important;
+    transition: width 2s ease-in-out !important; /* Aumentamos a 2 segundos para que sea muy notorio */
+}
+
+/* Estilo para los links en el footer */
+.link-lila {
+    color: #ffffff !important;
+    text-decoration: none;
+    border-bottom: 1px dashed #a855f7;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.link-lila:hover {
+    color: #a855f7 !important;
+    border-bottom: 1px solid #d8b4fe;
+}
+
+/* Espaciado extra para que no se vea amontonado */
+.contact h4 {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
